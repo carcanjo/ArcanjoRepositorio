@@ -45,22 +45,23 @@ $(document).ready(function () {
                 },
             success:
                 function (r) {
- 
-                   
+
+
                     CPF = $("#CPF").val();
                     if (r == 'CPFinvalido') {
                         ModalDialog('Alerta!', 'CPF: ' + CPF + ' inválido!');
                     }
                     else if (r == 'CPFExistente') {
-                        ModalDialog('Alerta!', 'CPF: ' + CPF + ' ja cadastrado em sistema!');
+                        ModalDialog('Alerta!', 'CPF: ' + CPF + ' já cadastrado em sistema!');
                     }
-                    else { 
-                        ModalDialog("Sucesso!", r);
-                        setTimeout(function () {
-                            $("#formCadastro")[0].reset();
-                            window.location.href = urlRetorno;
-                        }, 500);
-                     }
+                    else {
+                            ModalDialog("Sucesso!", r);
+                            setTimeout(function () {
+                                 $("#formCadastro")[0].reset();
+                                window.location.href = urlRetorno;
+
+                             }, 2500);
+                         }
                 }
         });
     });
@@ -90,5 +91,5 @@ function ModalDialog(titulo, texto) {
     $('body').append(texto);
     $('#' + random).modal('show');
 
-  
+
 }
