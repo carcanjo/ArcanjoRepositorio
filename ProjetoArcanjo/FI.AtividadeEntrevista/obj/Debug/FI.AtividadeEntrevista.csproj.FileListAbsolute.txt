@@ -31,3 +31,8 @@ C:\Users\cleit\OneDrive\Área de Trabalho\ProjetoArcanjo\FI.AtividadeEntrevista\
 C:\Users\cleit\OneDrive\Área de Trabalho\ProjetoArcanjo\FI.AtividadeEntrevista\obj\Debug\FI.AtividadeEntrevista.csprojAssemblyReference.cache
 C:\Users\cleit\OneDrive\Área de Trabalho\ProjetoArcanjo\FI.AtividadeEntrevista\obj\Debug\FI.AtividadeEntrevista.dll
 C:\Users\cleit\OneDrive\Área de Trabalho\ProjetoArcanjo\FI.AtividadeEntrevista\obj\Debug\FI.AtividadeEntrevista.pdb
+C:\Users\Filipe\Desktop\Nova pasta\ArcanjoRepositorio\ProjetoArcanjo\FI.AtividadeEntrevista\bin\Debug\FI.AtividadeEntrevista.dll
+C:\Users\Filipe\Desktop\Nova pasta\ArcanjoRepositorio\ProjetoArcanjo\FI.AtividadeEntrevista\bin\Debug\FI.AtividadeEntrevista.pdb
+C:\Users\Filipe\Desktop\Nova pasta\ArcanjoRepositorio\ProjetoArcanjo\FI.AtividadeEntrevista\obj\Debug\FI.AtividadeEntrevista.csprojAssemblyReference.cache
+C:\Users\Filipe\Desktop\Nova pasta\ArcanjoRepositorio\ProjetoArcanjo\FI.AtividadeEntrevista\obj\Debug\FI.AtividadeEntrevista.dll
+C:\Users\Filipe\Desktop\Nova pasta\ArcanjoRepositorio\ProjetoArcanjo\FI.AtividadeEntrevista\obj\Debug\FI.AtividadeEntrevista.pdb
