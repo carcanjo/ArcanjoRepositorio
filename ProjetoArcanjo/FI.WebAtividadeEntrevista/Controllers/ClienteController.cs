@@ -48,7 +48,8 @@ namespace WebAtividadeEntrevista.Controllers
                 {
                     return Json("erroCPF");
                 }
-                else{
+                else
+                {
                     model.Id = bo.Incluir(new Cliente()
                     {
                         CEP = model.CEP,
@@ -84,13 +85,6 @@ namespace WebAtividadeEntrevista.Controllers
                 {
                     return Json("CPFExistente");
                 }
-
-            }
-
-
-            if (!bo.ValidaCPF(model.CPF))
-            {
-                return Json("CPFinvalido");
             }
 
             if (!this.ModelState.IsValid)
@@ -118,7 +112,6 @@ namespace WebAtividadeEntrevista.Controllers
                     Telefone = model.Telefone,
                     CPF = model.CPF
                 });
-
                 return Json("Cadastro alterado com sucesso");
             }
         }
@@ -146,8 +139,6 @@ namespace WebAtividadeEntrevista.Controllers
                     Telefone = cliente.Telefone,
                     CPF = cliente.CPF
                 };
-
-
             }
 
             return View(model);
@@ -179,5 +170,44 @@ namespace WebAtividadeEntrevista.Controllers
                 return Json(new { Result = "ERROR", Message = ex.Message });
             }
         }
+
+
+        [HttpGet]
+        public ActionResult Excluir(long id)
+        {
+            BoCliente bo = new BoCliente();
+            Cliente cliente = bo.Consultar(id);
+            Models.ClienteModel model = null;
+
+            if (cliente != null)
+            {
+                model = new ClienteModel()
+                {
+                    Id = cliente.Id,
+                    CEP = cliente.CEP,
+                    Cidade = cliente.Cidade,
+                    Email = cliente.Email,
+                    Estado = cliente.Estado,
+                    Logradouro = cliente.Logradouro,
+                    Nacionalidade = cliente.Nacionalidade,
+                    Nome = cliente.Nome,
+                    Sobrenome = cliente.Sobrenome,
+                    Telefone = cliente.Telefone,
+                    CPF = cliente.CPF
+                };
+            }
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public JsonResult Excluir(ClienteModel model)
+        {
+            BoCliente bo = new BoCliente();
+
+            bo.Excluir(model.Id);
+            return Json("Cadastro excluido");
+        }
+
     }
 }

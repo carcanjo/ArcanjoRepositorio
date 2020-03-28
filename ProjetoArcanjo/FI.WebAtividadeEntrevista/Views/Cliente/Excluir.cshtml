@@ -1,0 +1,17 @@
+﻿
+
+@model WebAtividadeEntrevista.Models.ClienteModel
+@{
+    ViewBag.Title = "Excluir Cadastro";
+}
+
+@section scripts{
+    <script>
+        var urlPost = '@Url.Action("Excluir", "Cliente", new { area = "" })';
+        var obj = @Html.Raw(Json.Encode(Model));
+        var urlRetorno = '@Url.Action("Index", "Cliente", new { area = "" })';
+    </script>
+    @Scripts.Render("~/bundles/delClientes")
+}
+<h2>@Html.Raw(ViewBag.Title)</h2>
+@Html.Partial("FormsDelete")
