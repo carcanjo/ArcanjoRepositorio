@@ -23,17 +23,20 @@ $(document).ready(function () {
                 },
                 Email: {
                     title: 'Email',
-                    width: '35%'
+                    width: '40%'
                 },
                 Alterar: {
-                    title: '',
+                    title: 'Alterar',
+                    width: '5%',
                     display: function (data) {
-                        return '<button onclick="window.location.href=\'' + urlAlteracao + '/' + data.record.Id + '\'" class="btn btn-warning">Alterar</button>';
+                        return '<button onclick="window.location.href=\'' + urlAlteracao + '/' + data.record.Id + '\'" class="btn btn-warning"><i class="fa fa-address-book-o" aria-hidden="true"></i>  Alterar</button>';
                     }
                 },
                 Excluir: {
+                    title: 'Excluir',
+                    width: '5%',
                     display: function (data) {
-                        return '<button onclick="window.location.href=\'' + urlExclusao + '/' + data.record.Id + '\'" class="btn btn-danger ">Excluir</button>';
+                        return '<button onclick="window.location.href=\'' + urlExclusao + '/' + data.record.Id + '\'" class="btn btn-danger "><i class="fa fa-address-book-o" aria-hidden="true"></i>  Excluir</button>';
                     }
                 }
             }
